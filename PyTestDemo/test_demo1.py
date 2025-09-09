@@ -20,4 +20,4 @@ def test_firstProgram():   #syntax of writing funtion.
 
 
 def test_secondProgram():
-    print("Good Morning.")
+    print("Good Morning on 9 Sep 2025.")
