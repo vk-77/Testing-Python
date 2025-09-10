@@ -1,5 +1,16 @@
 import pytest
 
 
-def test_fixtureDemo(setup):
-    print("I will execute steps in fixtureDemo method")
+@pytest.mark.usefixtures("setup") #To optimize, we can use class and use Pytest.mark
+class TestExample:
+    def test_fixtureDemo(self):
+        print("I will execute steps in fixtureDemo method")
+
+    def test_fixtureDemo1(self):
+        print("I will execute steps in fixtureDemo method")
+
+    def test_fixtureDemo2(self):
+        print("I will execute steps in fixtureDemo method")
+
+    def test_fixtureDemo3(self):
+        print("I will execute steps in fixtureDemo method")
